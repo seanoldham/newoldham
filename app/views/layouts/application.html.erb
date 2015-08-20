@@ -9,6 +9,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
     <%= favicon_link_tag 'us1.png', rel: 'apple-touch-icon', type: 'image/png' %>
+    <script type="text/javascript">
+      (function() {
+        window.PA_SITE_ID = 5930841486477;
+        var u='//api.pleasant.io/';
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'pleasant.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
   </head>
   <body>
     <%= render 'nav' %>
