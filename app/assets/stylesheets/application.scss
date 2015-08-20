@@ -1,0 +1,91 @@
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import url(http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Pacifico);
+
+$dark-blue: #4366A9;
+$light-blue: #679CEB;
+$dark-yellow: #F1B149;
+$light-yellow: #FFF56C;
+$head-text: 'Pacifico', cursive;
+$body-text: 'Merriweather', serif;
+
+body {
+  // background-image: url(image_path('symphony3.png'));
+  background-attachment: fixed;
+  background-color: #fcfbf5;
+  font-family: $body-text;
+  color: $dark-blue;
+}
+
+.navbar {
+  background: transparent;
+  color: $dark-blue;
+  border: none;
+  font-size: 125%;
+  // pointer-events: none;
+}
+
+.navbar-header .navbar-brand {
+  font-family: $head-text;
+  font-size: 125%;
+  color: inherit;
+}
+
+.navbar-header .navbar-brand:hover, .navbar-brand:focus {
+  color: $dark-yellow;
+}
+
+.navbar-default .navbar-nav li a {
+  color: inherit;
+}
+
+.navbar-default .navbar-nav li a:hover, a:focus {
+  color: $dark-yellow;
+}
+
+.navbar-default .navbar-toggle {
+  border: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-toggle:focus {
+  background-color: $dark-blue;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: $light-blue;
+}
+
+#names {
+  font-family: $head-text;
+  font-size: 5em;
+  color: $light-blue;
+  margin-left: -15px;
+}
+
+p {
+  font-family: $body-text;
+  color: $dark-blue;
+}
+
+// Remove all below for site launch, along with overlay div in index and navbar pointer-events here. Also uncomment bg image
+
+#names, .navbar, .img, h3 {
+  -webkit-filter: blur(40px);
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(17,17,17,0.7);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:5;
+}
+
+#overlay-box h1 {
+  margin-top: 30%;
+  font-family: $head-text;
+  font-size: 6em;
+  color: $light-yellow;
+}
