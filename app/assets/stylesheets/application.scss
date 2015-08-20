@@ -83,9 +83,23 @@ p {
   z-index:5;
 }
 
-#overlay-box h1 {
-  margin-top: 30%;
-  font-family: $head-text;
-  font-size: 6em;
-  color: $light-yellow;
+#overlay-box {
+  h1 {
+    margin-top: 30%;
+    font-family: $head-text;
+    font-size: 6em;
+    color: $light-yellow;
+  }
+  p {
+    font-family: $body-text;
+    font-size: 2em;
+    color: $light-yellow;
+    a {
+      color: $dark-yellow;
+    }
+    a:hover, a:focus {
+      text-decoration: none;
+      color: $light-blue;
+    }
+  }
 }
