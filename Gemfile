@@ -11,9 +11,23 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'rails_12factor', group: :production
+gem "bullet", group: :development
 
 group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'better_errors'
+  gem 'binding_of_caller'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+
+group :test do
+  gem 'faker'
+  gem 'capybara'
+  gem 'shoulda-matchers', require: false
+  gem "database_cleaner"
+  gem "launchy"
+  gem "selenium-webdriver"
 end
