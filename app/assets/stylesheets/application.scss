@@ -12,7 +12,7 @@ $body-text: 'Merriweather', serif;
 
 body {
   // Uncomment when site launches
-  background-image: url(image_path('symphony3.png'));
+  // background-image: url(image_path('symphony3.png'));
   background-attachment: fixed;
   background-color: #fcfbf5;
   font-family: $body-text;
@@ -31,7 +31,7 @@ body {
   border: none;
   font-size: 125%;
   // Remove when site launches
-  // pointer-events: none;
+  pointer-events: none;
 }
 
 .navbar-header .navbar-brand {
@@ -77,38 +77,38 @@ p {
 }
 
 // Remove all below for site launch, along with overlay div in index and navbar pointer-events here. Also uncomment bg image
-//
-// .h1, .navbar, .img, .h3 {
-//   -webkit-filter: blur(40px);
-// }
-//
-// #overlay {
-//   height: 100%;
-//   width: 100%;
-//   background: rgba(17,17,17,0.7);
-//   position:fixed;
-//   top:0;
-//   left:0;
-//   z-index:5;
-// }
-//
-// #overlay-box {
-//   h1 {
-//     margin-top: 30%;
-//     font-family: $head-text;
-//     font-size: 6em;
-//     color: $light-yellow;
-//   };
-//   p {
-//     font-family: $body-text;
-//     font-size: 2em;
-//     color: $light-yellow;
-//     a {
-//       color: $dark-yellow;
-//     };
-//     a:hover, a:focus {
-//       text-decoration: none;
-//       color: $light-blue;
-//     };
-//   };
-// }
+
+.h1, .navbar, .img, .h3 {
+  -webkit-filter: blur(40px);
+}
+
+#overlay {
+  height: 100%;
+  width: 100%;
+  background: rgba(17,17,17,0.7);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:5;
+}
+
+#overlay-box {
+  h1 {
+    margin-top: 30%;
+    font-family: $head-text;
+    font-size: 6em;
+    color: $light-yellow;
+  };
+  p {
+    font-family: $body-text;
+    font-size: 2em;
+    color: $light-yellow;
+    a {
+      color: $dark-yellow;
+    };
+    a:hover, a:focus {
+      text-decoration: none;
+      color: $light-blue;
+    };
+  };
+}
