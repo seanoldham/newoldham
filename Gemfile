@@ -11,6 +11,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'rails_12factor', group: :production
+gem 'puma'
 
 group :development do
   gem 'bullet'
