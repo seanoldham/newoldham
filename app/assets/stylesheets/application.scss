@@ -79,6 +79,7 @@ p {
 // Remove all below for site launch, along with overlay div in index and navbar pointer-events here. Also uncomment bg image
 
 .h1, .navbar, .img, .h3 {
+  filter: blur(40px);
   -webkit-filter: blur(40px);
 }
 
