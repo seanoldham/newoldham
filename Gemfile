@@ -14,6 +14,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'rails_12factor', group: :production
 gem 'puma'
+gem 'octopress', '~> 3.0'
 
 group :development do
   gem 'bullet'
