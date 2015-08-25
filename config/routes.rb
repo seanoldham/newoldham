@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'home#index'
 
-  match '/about_us', to: 'home#about', via: 'get', as: 'about_us'
+  match '/about', to: 'home#about', via: 'get', as: 'about'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
