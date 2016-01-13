@@ -1,0 +1,72 @@
+@import url(//fonts.googleapis.com/css?family=Merriweather:400,400italic,700|Pacifico);
+
+$dark-blue: #4366A9;
+$light-blue: #679CEB;
+$dark-yellow: #F1B149;
+$light-yellow: #FFF56C;
+$head-text: 'Pacifico', cursive;
+$body-text: 'Merriweather', serif;
+
+body {
+ background-image: url(image_path('symphony3.png'));
+ background-attachment: fixed;
+ background-color: #fcfbf5;
+ font-family: $body-text;
+ color: $dark-blue;
+}
+
+.h1 {
+ font-family: $head-text;
+ font-size: 5em;
+ color: $light-blue;
+}
+
+.navbar {
+ background: transparent;
+ color: $dark-blue;
+ border: none;
+ font-size: 125%;
+}
+
+.navbar-header .navbar-brand {
+ font-family: $head-text;
+ font-size: 150%;
+ color: inherit;
+}
+
+.navbar-header .navbar-brand:hover, .navbar-brand:focus {
+ color: $dark-yellow;
+}
+
+.navbar-default .navbar-nav li a {
+ color: inherit;
+}
+
+.navbar-default .navbar-nav li a:hover, a:focus {
+ color: $dark-yellow;
+}
+
+.navbar-default .navbar-toggle {
+ border: none;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-toggle:focus {
+ background-color: $dark-blue;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+ background-color: $light-blue;
+}
+
+.img-circle {
+ border: 10px solid $light-yellow;
+}
+
+#names {
+ margin-left: -15px;
+}
+
+p {
+ font-family: $body-text;
+ color: $dark-blue;
+}
